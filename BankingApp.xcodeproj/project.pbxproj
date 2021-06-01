@@ -16,6 +16,7 @@
 		680C21DF2666D67F00753CC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21DE2666D67F00753CC2 /* HomeView.swift */; };
 		680C21E22666DA4400753CC2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E12666DA4400753CC2 /* CardView.swift */; };
 		680C21E42666DA9200753CC2 /* SingleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E32666DA9200753CC2 /* SingleCardView.swift */; };
+		680C21E72666EF9A00753CC2 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E62666EF9A00753CC2 /* GoalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		680C21DE2666D67F00753CC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		680C21E12666DA4400753CC2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		680C21E32666DA9200753CC2 /* SingleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardView.swift; sourceTree = "<group>"; };
+		680C21E62666EF9A00753CC2 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				680C21DE2666D67F00753CC2 /* HomeView.swift */,
 				680C21E02666DA3800753CC2 /* Card */,
+				680C21E52666EE0100753CC2 /* Goal */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -153,6 +156,14 @@
 				680C21E32666DA9200753CC2 /* SingleCardView.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		680C21E52666EE0100753CC2 /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				680C21E62666EF9A00753CC2 /* GoalView.swift */,
+			);
+			path = Goal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				680C21DF2666D67F00753CC2 /* HomeView.swift in Sources */,
+				680C21E72666EF9A00753CC2 /* GoalView.swift in Sources */,
 				680C21B52666D5FB00753CC2 /* ContentView.swift in Sources */,
 				680C21E22666DA4400753CC2 /* CardView.swift in Sources */,
 				680C21E42666DA9200753CC2 /* SingleCardView.swift in Sources */,

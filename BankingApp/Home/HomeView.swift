@@ -37,13 +37,18 @@ struct HomeView: View {
                     Spacer()
                 }
             }
-            Spacer().frame(height: UIScreen.main.bounds.height / 2)
-            VStack {
-                Text("oui")
-                Text("oui")
-                Text("oui")
-                Text("oui")
+            VStack(alignment: .leading) {
+                
+                HStack {
+                    Text("Current Goal")
+                        .font(.system(size: 30, weight: .semibold, design: .rounded))
+                    Spacer()
+                }
+                
+                GoalView().padding(.vertical, 30)
+            
             }
+            .padding()
         }
     }
 }
