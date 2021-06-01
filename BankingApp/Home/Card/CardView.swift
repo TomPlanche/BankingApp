@@ -40,8 +40,8 @@ struct CardView: View {
                         cvv: "754"
                     )
                 )
-            }.padding(.leading, 10)
-        }
+            }
+        }.padding(.horizontal, 10)
     }
 }
 
