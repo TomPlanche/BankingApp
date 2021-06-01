@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        UITabBar.appearance().barTintColor = UIColor(named: "tab-bar-color")
+    }
+    
     var body: some View {
         TabView {
             HomeView()
                 .tabItem {
-                    Image(systemName: "bag")
+                    VStack {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
                 }
-        }
+        }//.accentColor(.black)
     }
 }
 
