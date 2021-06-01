@@ -13,6 +13,9 @@
 		680C21BA2666D5FC00753CC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680C21B92666D5FC00753CC2 /* Preview Assets.xcassets */; };
 		680C21C52666D5FC00753CC2 /* BankingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21C42666D5FC00753CC2 /* BankingAppTests.swift */; };
 		680C21D02666D5FC00753CC2 /* BankingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21CF2666D5FC00753CC2 /* BankingAppUITests.swift */; };
+		680C21DF2666D67F00753CC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21DE2666D67F00753CC2 /* HomeView.swift */; };
+		680C21E22666DA4400753CC2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E12666DA4400753CC2 /* CardView.swift */; };
+		680C21E42666DA9200753CC2 /* SingleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E32666DA9200753CC2 /* SingleCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		680C21CB2666D5FC00753CC2 /* BankingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		680C21CF2666D5FC00753CC2 /* BankingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingAppUITests.swift; sourceTree = "<group>"; };
 		680C21D12666D5FC00753CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680C21DE2666D67F00753CC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		680C21E12666DA4400753CC2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		680C21E32666DA9200753CC2 /* SingleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 				680C21B22666D5FB00753CC2 /* BankingAppApp.swift */,
 				680C21B42666D5FB00753CC2 /* ContentView.swift */,
 				680C21B62666D5FC00753CC2 /* Assets.xcassets */,
+				680C21DD2666D67600753CC2 /* Home */,
 				680C21BB2666D5FC00753CC2 /* Info.plist */,
 				680C21B82666D5FC00753CC2 /* Preview Content */,
 			);
@@ -128,6 +135,24 @@
 				680C21D12666D5FC00753CC2 /* Info.plist */,
 			);
 			path = BankingAppUITests;
+			sourceTree = "<group>";
+		};
+		680C21DD2666D67600753CC2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				680C21DE2666D67F00753CC2 /* HomeView.swift */,
+				680C21E02666DA3800753CC2 /* Card */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		680C21E02666DA3800753CC2 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				680C21E12666DA4400753CC2 /* CardView.swift */,
+				680C21E32666DA9200753CC2 /* SingleCardView.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680C21DF2666D67F00753CC2 /* HomeView.swift in Sources */,
 				680C21B52666D5FB00753CC2 /* ContentView.swift in Sources */,
+				680C21E22666DA4400753CC2 /* CardView.swift in Sources */,
+				680C21E42666DA9200753CC2 /* SingleCardView.swift in Sources */,
 				680C21B32666D5FB00753CC2 /* BankingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
