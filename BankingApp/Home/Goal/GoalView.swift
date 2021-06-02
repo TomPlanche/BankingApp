@@ -46,7 +46,7 @@ struct GoalView: View {
                 
             }
         }
-        .frame(width: UIScreen.main.bounds.width / 1.1, height: UIScreen.main.bounds.height / 5.5)
+        .frame(width: UIScreen.main.bounds.width / 1.1, height: UIScreen.main.bounds.height / 6)
     }
 }
 

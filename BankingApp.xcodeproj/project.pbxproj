@@ -17,6 +17,8 @@
 		680C21E22666DA4400753CC2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E12666DA4400753CC2 /* CardView.swift */; };
 		680C21E42666DA9200753CC2 /* SingleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E32666DA9200753CC2 /* SingleCardView.swift */; };
 		680C21E72666EF9A00753CC2 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E62666EF9A00753CC2 /* GoalView.swift */; };
+		680C21EA2666FB4200753CC2 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E92666FB4200753CC2 /* TransactionsView.swift */; };
+		680C21EC2666FB4C00753CC2 /* SingleTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21EB2666FB4C00753CC2 /* SingleTransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		680C21E12666DA4400753CC2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		680C21E32666DA9200753CC2 /* SingleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardView.swift; sourceTree = "<group>"; };
 		680C21E62666EF9A00753CC2 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		680C21E92666FB4200753CC2 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		680C21EB2666FB4C00753CC2 /* SingleTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				680C21DE2666D67F00753CC2 /* HomeView.swift */,
 				680C21E02666DA3800753CC2 /* Card */,
 				680C21E52666EE0100753CC2 /* Goal */,
+				680C21E82666FB2500753CC2 /* Transactions */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -164,6 +169,15 @@
 				680C21E62666EF9A00753CC2 /* GoalView.swift */,
 			);
 			path = Goal;
+			sourceTree = "<group>";
+		};
+		680C21E82666FB2500753CC2 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				680C21E92666FB4200753CC2 /* TransactionsView.swift */,
+				680C21EB2666FB4C00753CC2 /* SingleTransactionView.swift */,
+			);
+			path = Transactions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,11 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				680C21DF2666D67F00753CC2 /* HomeView.swift in Sources */,
+				680C21EC2666FB4C00753CC2 /* SingleTransactionView.swift in Sources */,
 				680C21E72666EF9A00753CC2 /* GoalView.swift in Sources */,
 				680C21B52666D5FB00753CC2 /* ContentView.swift in Sources */,
 				680C21E22666DA4400753CC2 /* CardView.swift in Sources */,
 				680C21E42666DA9200753CC2 /* SingleCardView.swift in Sources */,
 				680C21B32666D5FB00753CC2 /* BankingAppApp.swift in Sources */,
+				680C21EA2666FB4200753CC2 /* TransactionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

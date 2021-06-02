@@ -19,8 +19,8 @@ struct HomeView: View {
                             Text("Good Morning")
                                 .font(.system(size: 22, design: .serif))
                             Text("Tom")
-                            
-                                .font(.system(size: 35, weight: .semibold ,design: .serif))
+
+                                .font(.system(size: 35, weight: .semibold, design: .serif))
                         }
                         Spacer()
                         ZStack {
@@ -35,20 +35,29 @@ struct HomeView: View {
                     }.padding(.horizontal)
                     CardView()
                     Spacer()
-                }
+                }.frame(height: 320)
             }
             VStack(alignment: .leading) {
-                
+
                 HStack {
                     Text("Current Goal")
                         .font(.system(size: 30, weight: .semibold, design: .rounded))
                     Spacer()
                 }
+
+                GoalView()
+
+                HStack {
+                    Text("Transactions")
+                        .font(.system(size: 30, weight: .semibold, design: .rounded))
+                    Spacer()
+                }
                 
-                GoalView().padding(.vertical, 30)
-            
-            }
-            .padding()
+                TransactionsView().padding(.bottom)
+                
+                Spacer()
+
+            }.padding()
         }
     }
 }
