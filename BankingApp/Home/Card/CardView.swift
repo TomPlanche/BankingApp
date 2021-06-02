@@ -57,7 +57,7 @@ struct CardView: View {
                 }
                 
                 Button(action: {
-                    
+                    self.showView.toggle()
                 }, label: {
                     SingleCardView(
                         Card: card2,
