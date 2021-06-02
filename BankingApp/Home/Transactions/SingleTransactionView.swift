@@ -20,12 +20,12 @@ struct SingleTransactionView: View {
         HStack {
             ZStack {
                 Rectangle()
-                    .cornerRadius(20)
+                    .cornerRadius(15)
                     .foregroundColor(rectangleColor)
-                    .frame(width: 70, height: 70)
+                    .frame(width: 60, height: 60)
                 Image(imageName)
                     .resizable()
-                    .frame(width: 50, height: 40)
+                    .frame(width: 40, height: 35)
             }
             VStack(alignment: .leading) {
                 Text(name)

@@ -10,8 +10,11 @@ import SwiftUI
 struct SingleCardView: View {
 
     @State var Card: Card
+    @State var width: CGFloat
+    @State var height: CGFloat
 
     var body: some View {
+
         ZStack {
             Image(Card.type == "mastercard" ? "dark-card-bg" : "white-card-bg")
                 .resizable()
@@ -46,9 +49,10 @@ struct SingleCardView: View {
                             .foregroundColor(.white)
                     }
                 }
-                .padding([.bottom, .horizontal])
+                    .padding([.bottom, .horizontal])
             }
-        }.frame(width: UIScreen.main.bounds.width / 1.75, height: UIScreen.main.bounds.height / 5.5)
+        }.frame(width: width, height: height)
+
     }
 }
 
@@ -61,9 +65,11 @@ struct SingleCardView_Previews: PreviewProvider {
                 type: "mastercard",
                 number: "7642673489035612",
                 cvv: "754"
-            )
+            ),
+            width: UIScreen.main.bounds.width / 1.75,
+            height: UIScreen.main.bounds.height / 5.5
         )
-        .previewDevice("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
     }
 }
 

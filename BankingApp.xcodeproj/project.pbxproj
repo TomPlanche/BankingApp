@@ -19,6 +19,9 @@
 		680C21E72666EF9A00753CC2 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E62666EF9A00753CC2 /* GoalView.swift */; };
 		680C21EA2666FB4200753CC2 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21E92666FB4200753CC2 /* TransactionsView.swift */; };
 		680C21EC2666FB4C00753CC2 /* SingleTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21EB2666FB4C00753CC2 /* SingleTransactionView.swift */; };
+		680C21EE266775F800753CC2 /* OnClickCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21ED266775F800753CC2 /* OnClickCardView.swift */; };
+		680C21F026677E0400753CC2 /* SingleCardForOnClickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21EF26677E0400753CC2 /* SingleCardForOnClickView.swift */; };
+		680C21F32667879700753CC2 /* SingleNextWrite-OffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C21F22667879700753CC2 /* SingleNextWrite-OffView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		680C21E62666EF9A00753CC2 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		680C21E92666FB4200753CC2 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		680C21EB2666FB4C00753CC2 /* SingleTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTransactionView.swift; sourceTree = "<group>"; };
+		680C21ED266775F800753CC2 /* OnClickCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnClickCardView.swift; sourceTree = "<group>"; };
+		680C21EF26677E0400753CC2 /* SingleCardForOnClickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardForOnClickView.swift; sourceTree = "<group>"; };
+		680C21F22667879700753CC2 /* SingleNextWrite-OffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingleNextWrite-OffView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 			children = (
 				680C21E12666DA4400753CC2 /* CardView.swift */,
 				680C21E32666DA9200753CC2 /* SingleCardView.swift */,
+				680C21F12667876600753CC2 /* On Click */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -178,6 +185,16 @@
 				680C21EB2666FB4C00753CC2 /* SingleTransactionView.swift */,
 			);
 			path = Transactions;
+			sourceTree = "<group>";
+		};
+		680C21F12667876600753CC2 /* On Click */ = {
+			isa = PBXGroup;
+			children = (
+				680C21ED266775F800753CC2 /* OnClickCardView.swift */,
+				680C21EF26677E0400753CC2 /* SingleCardForOnClickView.swift */,
+				680C21F22667879700753CC2 /* SingleNextWrite-OffView.swift */,
+			);
+			path = "On Click";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +333,9 @@
 				680C21E22666DA4400753CC2 /* CardView.swift in Sources */,
 				680C21E42666DA9200753CC2 /* SingleCardView.swift in Sources */,
 				680C21B32666D5FB00753CC2 /* BankingAppApp.swift in Sources */,
+				680C21EE266775F800753CC2 /* OnClickCardView.swift in Sources */,
+				680C21F026677E0400753CC2 /* SingleCardForOnClickView.swift in Sources */,
+				680C21F32667879700753CC2 /* SingleNextWrite-OffView.swift in Sources */,
 				680C21EA2666FB4200753CC2 /* TransactionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

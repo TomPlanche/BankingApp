@@ -8,21 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     init() {
         UITabBar.appearance().barTintColor = UIColor(named: "tab-bar-color")
     }
-    
+
     var body: some View {
         TabView {
             HomeView()
                 .tabItem {
-                    VStack {
-                        Image(systemName: "house")
-                        Text("Home")
-                    }
+                VStack {
+                    Image(systemName: "house")
+                    Text("Home")
                 }
-        }//.accentColor(.black)
+            }
+            Text("Second View")
+                .tabItem {
+                VStack {
+                    Image(systemName: "bag")
+                    Text("Bag")
+                }
+            }
+            Text("Third View")
+                .tabItem {
+                VStack {
+                    Image(systemName: "heart.fill")
+                    Text("Liked")
+                }
+            }
+            Text("Forth View")
+                .tabItem {
+                VStack {
+                    Image(systemName: "person")
+                    Text("Account")
+                }
+            }
+        }.accentColor(.black)
     }
 }
 
@@ -44,7 +65,7 @@ extension String {
         formatter.minimumFractionDigits = (value!.contains(".00")) ? 0 : 2
         formatter.maximumFractionDigits = 2
         formatter.numberStyle = .currencyAccounting
-        
+
         return formatter.string(from: NSNumber(value: doubleValue)) ?? "$\(doubleValue)"
     }
 }

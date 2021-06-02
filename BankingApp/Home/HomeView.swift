@@ -52,9 +52,9 @@ struct HomeView: View {
                         .font(.system(size: 30, weight: .semibold, design: .rounded))
                     Spacer()
                 }
-                
+
                 TransactionsView().padding(.bottom)
-                
+
                 Spacer()
 
             }.padding()
