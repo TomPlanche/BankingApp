@@ -25,49 +25,30 @@ struct CardView: View {
         cvv: "754"
     )
     
-    @State var showView = false
-
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                Button(action:  {
-                    self.showView.toggle()
-                }, label: {
-                        ZStack {
-                            Rectangle()
-                                .cornerRadius(20)
-                                .foregroundColor(.white.opacity(0.7))
-                                .frame(width: UIScreen.main.bounds.width / 6)
-                            Image(systemName: "plus")
-                                .font(.system(size: 30))
-                                .foregroundColor(.black)
-                        }
-                    }).frame(width: UIScreen.main.bounds.width / 6, height: UIScreen.main.bounds.height / 5.5)
-                Button(action: {
-                    self.showView.toggle()
-                }, label: {
-                    SingleCardView(
-                        Card: card1,
-                        width: UIScreen.main.bounds.width / 1.75,
-                        height: UIScreen.main.bounds.height / 5.5
-                    )
-                })
-                .sheet(isPresented: $showView) {
-                    OnClickCardView(card: card1)
-                }
+                ZStack {
+                    Rectangle()
+                        .cornerRadius(20)
+                        .foregroundColor(.white.opacity(0.7))
+                        .frame(width: UIScreen.main.bounds.width / 6)
+                    Image(systemName: "plus")
+                        .font(.system(size: 30))
+                        .foregroundColor(.black)
+                }.frame(width: UIScreen.main.bounds.width / 6, height: UIScreen.main.bounds.height / 5.5)
                 
-                Button(action: {
-                    self.showView.toggle()
-                }, label: {
-                    SingleCardView(
-                        Card: card2,
-                        width: UIScreen.main.bounds.width / 1.75,
-                        height: UIScreen.main.bounds.height / 5.5
-                    )
-                })
-                .sheet(isPresented: $showView) {
-                    OnClickCardView(card: card2)
-                }
+                SingleCardView(
+                    Card: card1,
+                    width: UIScreen.main.bounds.width / 1.75,
+                    height: UIScreen.main.bounds.height / 5.5
+                )
+                
+                SingleCardView(
+                    Card: card2,
+                    width: UIScreen.main.bounds.width / 1.75,
+                    height: UIScreen.main.bounds.height / 5.5
+                )
             }
         }.padding(.horizontal, 10)
     }
