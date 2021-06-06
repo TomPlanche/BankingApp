@@ -122,7 +122,7 @@ struct OnClickCardView: View {
                 )
             }
 
-        }
+        }.foregroundColor(.black)
     }
 }
 

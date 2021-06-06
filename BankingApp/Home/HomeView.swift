@@ -35,7 +35,9 @@ struct HomeView: View {
                     }.padding(.horizontal)
                     CardView()
                     Spacer()
-                }.frame(height: 320)
+                }
+                .frame(height: 320)
+                .padding(.top)
             }
             VStack(alignment: .leading) {
 
